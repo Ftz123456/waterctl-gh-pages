@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>爱心星空表白网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background: white;
+            animation: stars 50s infinite;
+        }
+
+        .stars:nth-child(1) {
+            left: 50%;
+            top: 10%;
+        }
+
+        .stars:nth-child(2) {
+            left: 90%;
+            top: 40%;
+        }
+
+        .stars:nth-child(3) {
+            left: 10%;
+            top: 80%;
+        }
+
+        .stars:nth-child(4) {
+            left: 70%;
+            top: 90%;
+        }
+
+        .stars:nth-child(5) {
+            left: 20%;
+            top: 20%;
+        }
+
+        .stars:nth-child(6) {
+            left: 80%;
+            top: 60%;
+        }
+
+        .stars:nth-child(7) {
+            left: 40%;
+            top: 30%;
+        }
+
+        .stars:nth-child(8) {
+            left: 60%;
+            top: 70%;
+        }
+
+        .stars:nth-child(9) {
+            left: 30%;
+            top: 50%;
+        }
+
+        .stars:nth-child(10) {
+            left: 15%;
+            top: 10%;
+        }
+
+        @keyframes stars {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+        }
+
+        .shooting-stars {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: white;
+            animation: shooting-stars 5s infinite;
+        }
+
+        .shooting-stars:nth-child(1) {
+            left: 0;
+            top: 20%;
+            animation-delay: 1s;
+        }
+
+        .shooting-stars:nth-child(2) {
+            left: 10%;
+            top: 40%;
+            animation-delay: 2s;
+        }
+
+        .shooting-stars:nth-child(3) {
+            left: 20%;
+            top: 60%;
+            animation-delay: 3s;
+        }
+
+        .shooting-stars:nth-child(4) {
+            left: 30%;
+            top: 80%;
+            animation-delay: 4s;
+        }
+
+        @keyframes shooting-stars {
+            0% {
+                transform: translateX(0) translateY(0);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(300px) translateY(-300px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(600px) translateY(-600px);
+                opacity: 0;
+            }
+        }
+
+        .letter {
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            margin-left: -300px;
+            margin-top: -200px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-family: "STKaiti";
+            font-size: 20px;
+            color: #000;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .letter h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .letter p {
+            text-indent: 2em;
+            line-height: 1.5em;
+        }
+
+        .letter span {
+            display: block;
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            margin-left: 250px;
+            margin-top: -50px;
+            transform: rotate(45deg);
+        }
+
+        .heart div {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #f00;
+        }
+
+        .heart .left {
+            left: 0;
+            top: 25px;
+            border-radius: 50px 0 0 0;
+        }
+
+        .heart .right {
+            right: 0;
+            top: 25px;
+            border-radius: 0 50px 0 0;
+        }
+
+        .heart .bottom {
+            left: 25px;
+            bottom: 0;
+            border-radius: 0 0 50px 50px;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="shooting-stars"></div>
+    <div class="shooting-stars"></div>
+    <div class="shooting-stars"></div>
+    <div class="shooting-stars"></div>
+    <div class="letter">
+        <h1>亲爱的XX，你好！</h1>
+        <p>这是我为你制作的一个表白网站，希望你能喜欢。</p>
+        <p>我们相识于XX年XX月XX日，从那一刻起，你就深深地吸引了我，你的笑容、你的声音、你的气质，都让我无法忘怀。</p>
+        <p>我们相处了这么久，你给了我很多的快乐和温暖，你是我生命中最重要的人，我想和你一起走过每一个春夏秋冬，一起分享每一份喜怒哀乐，一起面对每一个挑战和机遇。</p>
+        <p>我爱你，不是因为你是谁，而是因为我在你身边的感觉。我爱你，不是因为你能给我什么，而是因为你能让我成为更好的自己。</p>
+        <p>我知道，爱情<p>我知道，爱情不是一件容易的事情，它需要勇气、信任、理解和包容，它也会遇到很多的困难和挑战，但我相信，只要我们彼此相爱，彼此支持，彼此珍惜，我们就能克服一切，走向幸福。</p>
+<p>所以，我想问你一个问题，一个关乎我们未来的问题，一个我鼓起了很大的勇气才能问出的问题，我希望你能认真地考虑，然后给我一个答案。</p>
+<p>你愿意做我的女/男朋友吗？</p>
+<span>你的XX</span>
+<div class="heart">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
+<audio src="1" autoplay loop></audio>
+<script>
+    // 这是一个隐藏的彩蛋，你可以设置一个密码，让你喜欢的人输入后，看到一个惊喜的效果
+    // 你可以修改密码和惊喜的内容，比如图片、文字、音乐等
+    var password = "520"; // 这是密码，你可以修改
+    var surprise = "<img src='2' alt='我们的照片'>"; // 这是惊喜的内容，你可以修改
+    var input = ""; // 这是用户输入的内容
+    document.addEventListener("keydown", function(event) {
+        input += event.key; // 把用户按下的键添加到输入内容中
+        if (input === password) { // 如果输入内容和密码一致
+            document.body.innerHTML = surprise; // 把网页内容替换为惊喜的内容
+        }
+    });
+</script>
